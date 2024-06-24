@@ -1,0 +1,125 @@
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            margin-bottom: 30vh;
+        }
+
+        #myButton {
+            background-image: url('images/button_unclicked.png');
+            height: 250px;
+            width: 350px;
+            border: none;
+            box-shadow: none;
+            background-color: white;
+            
+        }
+
+        @media (max-width: 480px){
+            
+            #myButton {
+                background-image: url('images/buttonsmall_unclicked.png');
+                height: 214px;
+                width: 300px; 
+            }
+        }
+
+        #myButton.clicked {
+            background-image: url('images/button_clicked.png');
+        }
+
+        @media (max-width: 480px){
+    
+            #myButton.clicked{
+        
+                background-image: url('images/buttonsmall_clicked.png');
+        
+            } 
+    
+        }
+        
+        #counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            margin-top: 25vh;
+            font-size: 150%;
+        }
+
+        #navigation{
+
+            background-color: white;
+            padding: 1vh;
+
+        }
+
+        #logo{
+        
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1rem;
+        }
+
+
+        #text_logo {
+            
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-left: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .nav_bottom{ 
+            
+            background-color: #fbfbfb;
+            height: 11vh;
+            
+            
+            
+        }
+        .nav_bottom a{
+    
+            color: black;
+    
+        }
+
+        .nav_bottom a:hover{
+    
+            color: dimgrey;
+    
+        }
+
+
+        #social{
+            
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            
+ 
+        }
+        #copyright{
+    
+            font-size: 12px;
+            font-family: sans-serif;
+            text-align: center;
+            margin: 10px;
+            
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        
+
+

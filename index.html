@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cuykon - Clicking Button Game</title>
+    <meta name="description" content="Click a Button and Enjoy The Sounds">
+    <meta name="keywords" content="button, buttongame, button game, cuykon, cuykon button, button cuykon, fun game, fungame, soundbutton, sound button">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        
+<script>
+    
+var audio = null;
+var suonoriproduzione = false;
+
+$(document).ready(function() {
+    
+    var count = 0;
+    
+    $("#myButton").on('mousedown', function(event) {
+        $(this).addClass('clicked');
+    });
+
+    $("#myButton").on('mouseup', function(event) {
+        $(this).removeClass('clicked');
+        count++;
+        $("#counter").text("Counter: " + count);
+
+        if (count % 50 === 0) {
+            
+            if(suonoriproduzione == true){
+                
+                audio.pause();
+                
+            }
+            
+            playRandomSound();
+        }
+    });
+
+    $("#myButton").on('touchstart', function(event) {
+        $(this).addClass('clicked');
+    });
+
+    $("#myButton").on('touchend', function(event) {
+        event.preventDefault();
+        $(this).removeClass('clicked');
+        count++;
+        $("#counter").text("Counter: " + count);
+
+        if (count % 50 === 0) {
+            
+            if(suonoriproduzione == true){
+                
+                audio.pause();
+                
+            }
+            
+            playRandomSound();
+        }
+    });
+});
+
+
+var sounds = [
+    
+    'sounds/audience-clapping.mp3',
+    'sounds/belligol.mp3',
+    'sounds/elprimosoundeffect.mp3',
+    'sounds/gnomo-ascia.mp3',
+    'sounds/Goes-Cristiano.mp3',
+    'sounds/Goes-Cristiano.mp3',
+    'sounds/imjosemourinho.mp3',
+    'sounds/its-broken.mp3',
+    'sounds/jojos-golden-wind.mp3',
+    'sounds/jonhcena.mp3',
+    'sounds/metal-pipe.mp3',
+    'sounds/outrosong.mp3',
+    'sounds/quack.mp3',
+    'sounds/royal-laugh.mp3',
+    'sounds/siu.mp3',
+    'sounds/spiderman-meme.mp3',
+    'sounds/spongebobsquarepants.mp3',
+    'sounds/this-is-elon-musk.mp3',
+    'sounds/wtf-is-a-kilometer.mp3',
+    'sounds/fbi-open-up.mp3',
+    'sounds/french-meme-song.mp3',
+    'sounds/lightskin-rizz.mp3',
+    'sounds/spongebob-squarepants-zoo.mp3',
+    'sounds/fail-sound.mp3',
+    'sounds/deja-vu.mp3',
+    'sounds/they-ask-you.mp3',
+    'sounds/directed-by.mp3',
+    
+];
+
+function playRandomSound() {
+    var randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+    audio = new Audio(randomSound);
+    audio.play();
+    suonoriproduzione = true;
+}
+</script>
+    
+</head>
+    
+<body>
+    <div class="sticky">
+        <nav id="navigation">
+            <div id="logo">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/Logo.png" alt="Logo"/></a>
+            </div> 
+            <div id="text_logo">
+            <h1>Cuykon</h1>
+            </div>
+        </nav>    
+    </div>
+    
+    <div>
+        <div class="counter"><p id="counter">Counter: 0</p></div>
+        <div class="button-container"><button id="myButton"></button></div>
+    </div>
+    
+        <footer>
+            <div class="nav_bottom">
+                <div id="social">
+                    <a href=https://github.com/cuykon><img src="images/github-mark.png" alt="GitHub"/></a>
+                </div>
+                <div id="copyright">
+                  Copyright © 2024
+                  <a href="https://github.com/Tuberoh">Tuberoh</a>.
+                   All Right Reserved.
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+
+
+
+
