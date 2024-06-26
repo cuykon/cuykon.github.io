@@ -75,6 +75,16 @@
             text-align: center;
         }
 
+        #issuebutton{
+            
+            display: inline-block;
+            float: right;
+            padding: 2vh;
+            margin-top: 1vh;
+            vertical-align: middle;
+            
+        }
+
         .nav_bottom{ 
             
             background-color: #fbfbfb;
