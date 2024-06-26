@@ -18,7 +18,7 @@
 
         @media (max-width: 480px){
             
-            #myButton {
+            #myButton { 
                 background-image: url('images/buttonsmall_unclicked.png');
                 height: 214px;
                 width: 300px; 
@@ -26,6 +26,7 @@
         }
 
         #myButton.clicked {
+                
             background-image: url('images/button_clicked.png');
         }
 
@@ -114,9 +115,40 @@
         }
 
         .sticky {
+                
             position: fixed;
             top: 0;
             width: 100%;
+        }
+        .tooltip {
+                
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+                
+            visibility: hidden;
+            width: 70px;
+            background-color: #fbfbfb;
+            color: black;
+            font-size: 12px;
+            font-family: Arial;
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .tooltip:hover .tooltiptext {
+                
+            visibility: visible;
+            opacity: 1;
         }
 
         
