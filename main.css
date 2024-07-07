@@ -7,7 +7,7 @@
         }
 
         #myButton {
-            background-image: url('images/button_unclicked.png');
+            background-image: url('images/button_unclicked.svg');
             height: 250px;
             width: 350px;
             border: none;
@@ -19,7 +19,7 @@
         @media (max-width: 480px){
             
             #myButton { 
-                background-image: url('images/buttonsmall_unclicked.png');
+                background-image: url('images/buttonsmall_unclicked.svg');
                 height: 214px;
                 width: 300px; 
             }
@@ -27,14 +27,14 @@
 
         #myButton.clicked {
                 
-            background-image: url('images/button_clicked.png');
+            background-image: url('images/button_clicked.svg');
         }
 
         @media (max-width: 480px){
     
             #myButton.clicked{
         
-                background-image: url('images/buttonsmall_clicked.png');
+                background-image: url('images/buttonsmall_clicked.svg');
         
             } 
     
