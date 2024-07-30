@@ -24,7 +24,7 @@
         
         @media (max-width: 480px){
             
-            #myButton { 
+            #MainButton { 
                 background-image: url('images/buttonsmall_unclicked.svg');
                 height: 214px;
                 width: 300px; 
