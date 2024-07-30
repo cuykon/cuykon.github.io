@@ -232,7 +232,7 @@
 
 	#stopButton{
     
-            background-image: url('/imagessvg/StopButton_unclicked.svg');
+            background-image: url('/images/StopButton_unclicked.svg');
             background-size: cover;
             width: 150px; 
             height: 59px;
@@ -244,7 +244,7 @@
 
         #stopButton.clicked{
     
-            background-image: url('/imagessvg/StopButton_clicked.svg');
+            background-image: url('/images/StopButton_clicked.svg');
             background-size: cover;
             width: 150px;
             height: 59px;
