@@ -52,7 +52,7 @@
 
         @media (max-width: 480px){
     
-            #myButton.clicked{
+            #MainButton.clicked{
         
                 background-image: url('images/buttonsmall_clicked.svg');
         
