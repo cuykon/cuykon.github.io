@@ -17,17 +17,17 @@ $(document).ready(function() {
         
             emojiCorrente = luna;
             htmlElement.setAttribute('data-bs-theme', 'dark');
-            logoImage.src = 'imagessvg/LogoDarkMode.svg';
-            IssueButton.src='imagessvg/IssueButtonDarkMode.svg';
-            github.src='imagessvg/github-markDarkMode.svg';
+            logoImage.src = 'images/LogoDarkMode.svg';
+            IssueButton.src='images/IssueButtonDarkMode.svg';
+            github.src='images/github-markDarkMode.svg';
         }
         else {
             
             emojiCorrente = sole;
             htmlElement.setAttribute('data-bs-theme', 'light');
-            logoImage.src = 'imagessvg/Logo.svg';
-            IssueButton.src='imagessvg/IssueButton.svg';
-            github.src= 'imagessvg/github-mark.svg';
+            logoImage.src = 'images/Logo.svg';
+            IssueButton.src='images/IssueButton.svg';
+            github.src= 'images/github-mark.svg';
             
         }
 
