@@ -110,7 +110,7 @@
             
             display: inline-block;
             padding: 1vh;
-            margin-top: 30px;
+            margin-top: 25px;
             vertical-align: middle;
             position: absolute;
 	    right: 0;
@@ -289,8 +289,8 @@
          #SiteButtonStateModeContainer{
             
             display: inline-block;
-            padding: 1.5vh;
-            margin-top: 30px;
+            padding: 1vh;
+            margin-top: 25px;
             vertical-align: middle;
             position: absolute;
             right: 50px;
