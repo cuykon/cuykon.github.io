@@ -31,7 +31,7 @@ $(document).ready(function() {
             
         }
 
-        emojiElement.textContent = emojiCorrente;
+        emojiElement.src = emojiCorrente;
         
     });
 });
