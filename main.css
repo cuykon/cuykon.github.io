@@ -2,7 +2,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30vh;
+            height: 250px;
         }
 
         #MainButton {
@@ -110,7 +110,7 @@
             
             display: inline-block;
             padding: 1vh;
-            margin-top: 2vh;
+            margin-top: 30px;
             vertical-align: middle;
             position: absolute;
 	    right: 0;
@@ -289,8 +289,8 @@
          #SiteButtonStateModeContainer{
             
             display: inline-block;
-            padding: 1vh;
-            margin-top: 2.2vh;
+            padding: 1.5vh;
+            margin-top: 30px;
             vertical-align: middle;
             position: absolute;
             right: 50px;
