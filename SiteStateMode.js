@@ -1,5 +1,5 @@
-var sole = '☀️';
-var luna = '🌙';
+var sole = 'images/SunLightMode.svg';
+var luna = 'images/MoonDarkMode.svg';
 var emojiCorrente = sole;
 
 $(document).ready(function() {
