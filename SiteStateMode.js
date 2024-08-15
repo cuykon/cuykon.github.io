@@ -10,28 +10,31 @@ $(document).ready(function() {
     var github = document.getElementById('github');
 
     emojiElement.addEventListener('touchstart' in window ? 'touchstart' : 'mousedown', function() {
-        
-        var htmlElement = document.documentElement;
-        
-        if (emojiCorrente == sole) {
-        
-            emojiCorrente = luna;
-            htmlElement.setAttribute('data-bs-theme', 'dark');
-            logoImage.src = 'images/LogoDarkMode.svg';
-            IssueButton.src='images/IssueButtonDarkMode.svg';
-            github.src='images/github-markDarkMode.svg';
-        }
-        else {
-            
-            emojiCorrente = sole;
-            htmlElement.setAttribute('data-bs-theme', 'light');
-            logoImage.src = 'images/Logo.svg';
-            IssueButton.src='images/IssueButton.svg';
-            github.src= 'images/github-mark.svg';
-            
-        }
 
-        emojiElement.src = emojiCorrente;
+        if (event.button === 0){
+            var htmlElement = document.documentElement;
+        
+            if (emojiCorrente == sole) {
+        
+                emojiCorrente = luna;
+                htmlElement.setAttribute('data-bs-theme', 'dark');
+                logoImage.src = 'images/LogoDarkMode.svg';
+                IssueButton.src='images/IssueButtonDarkMode.svg';
+                github.src='images/github-markDarkMode.svg';
+            }
+            else {
+            
+                emojiCorrente = sole;
+                htmlElement.setAttribute('data-bs-theme', 'light');
+                logoImage.src = 'images/Logo.svg';
+                IssueButton.src='images/IssueButton.svg';
+                github.src= 'images/github-mark.svg';
+            
+            }
+
+            emojiElement.src = emojiCorrente;
+
+        }
         
     });
 });
