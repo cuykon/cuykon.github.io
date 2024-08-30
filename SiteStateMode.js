@@ -1,6 +1,8 @@
 var sole = 'images/SunLightMode.svg';
 var luna = 'images/MoonDarkMode.svg';
 var emojiCorrente = sole;
+var imgLuna = new Image();
+imgLuna.src = luna;
 
 $(document).ready(function() {
     
