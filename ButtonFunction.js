@@ -62,6 +62,9 @@ $(document).ready(function() {
                 audio.pause();
                 $("#stopButton").addClass('clicked').removeClass('animate__animated animate__bounceIn').addClass('animate__animated animate__bounceOut');
                 $("#EmojiSound").removeClass('animate__animated animate__bounceIn').addClass('animate__animated animate__bounceOut');
+                setTimeout(function() {
+                    $("#EmojiSound").attr("src", 'emoji/Nothing.png');
+                }, 2000);
             }
         });
     });
@@ -110,6 +113,10 @@ function playRandomSound() {
             
             $("#stopButton").removeClass('animate__animated animate__bounceIn').addClass('animate__animated animate__bounceOut');
             $("#EmojiSound").removeClass('animate__animated animate__bounceIn').addClass('animate__animated animate__bounceOut');
+            setTimeout(function() {
+                $("#EmojiSound").attr("src", 'emoji/Nothing.png');
+            }, 2000);
+        
     });
     audio.play();
     suonoriproduzione = true;
