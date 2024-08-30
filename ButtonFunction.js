@@ -6,7 +6,7 @@ $(document).ready(function() {
     
     var count = 0;
     var img = new Image();
-    img.src = 'images/StopButton_clicked.png';
+    img.src = 'images/StopButton_clicked.svg';
     
     $("#MainButton").on('mousedown', function(event) {
         $(this).addClass('clicked');
