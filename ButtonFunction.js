@@ -5,6 +5,8 @@ var RandomIndex = 0;
 $(document).ready(function() {
     
     var count = 0;
+    var img = new Image();
+    img.src = 'images/StopButton_clicked.png';
     
     $("#MainButton").on('mousedown', function(event) {
         $(this).addClass('clicked');
