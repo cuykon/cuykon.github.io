@@ -1,0 +1,416 @@
+        body{
+    
+            background: url("images/AnimeBackGround.webp");
+    
+        }  
+
+
+        .Mainbutton-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            
+            
+        }
+
+        #MainButton {
+            background-image: url('images/buttonNaruto_unclicked-svg.svg');
+            height: 250px;
+            width: 350px;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            
+            
+        }
+    
+        @media (max-width: 480px){
+            
+            #MainButton {
+                background-image: url('images/buttonNarutosmall_unclicked.svg');
+                height: 214px;
+                width: 300px; 
+            }
+        }
+
+        #MainButton.clicked {
+            background-image: url('images/buttonNaruto_clicked-svg.svg');
+        }
+
+        @media (max-width: 480px){
+    
+            #MainButton.clicked{
+        
+                background-image: url('images/buttonNarutosmall_clicked.svg');
+        
+            }
+    
+        }
+        
+        #counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            margin-top: 25vh;
+            font-size: 150%;
+            color: white;
+
+        }
+
+        .navigation{
+            
+            background-color: rgba(250, 248, 248, 0.5);
+            padding: 1vh;
+            height: auto;
+            width: 100%;
+            border-radius: 30px 30px 30px 30px;
+            
+        }
+
+        #logocontainer{
+        
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0.25vh;
+            height: 80px;
+            width: 80px;
+            margin-left: 30px;
+        }
+        #logo{
+    
+            padding: 0.25vh;
+    
+        }
+
+        .logonaruto{
+    
+            height: 44px;
+            width: 170px;
+            margin-top: 15px;
+    
+    
+        }
+
+
+        #text_logo{
+            
+            display: inline-block;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin-left: 10px;
+            vertical-align: middle;
+            text-align: center;
+            color: white;
+            
+        }
+        
+        #issuebuttoncontainer{
+            
+            display: inline-block;
+            padding: 1vh;
+            vertical-align: middle;
+            position: absolute;
+            right: 0;
+            margin-top: 20px
+            
+            
+    
+        }
+        #issuebutton{
+    
+            padding: 0.5vh;
+    
+        }
+
+        .nav_bottom{ 
+            
+            background-color: darkgray;
+            height: 10vh;
+            border-radius: 30px 30px 30px 30px;
+            
+        }
+
+        .nav_bottom a{
+    
+            color: black;
+            font-family: Arial;
+    
+        }
+
+        .nav_bottom a:hover{
+    
+            color: dimgrey;
+    
+        }
+
+        .social{
+            
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            
+ 
+        }
+
+        #github{
+    
+            padding: 0.5vh;
+    
+        }
+
+        #copyright{
+    
+            font-size: 12px;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            
+        }
+
+        #copyright a{
+    
+            color: white;
+    
+        }
+
+        #copyright a:hover{
+    
+            color: whitesmoke;
+    
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 70px;
+            background-color: #fbfbfb;
+            color: black;
+            font-size: 12px;
+            font-family: Arial;
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            
+            margin-left: -60px;
+  
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .small_svg_50px{
+    
+            height: 50px;
+            width: 50px;
+    
+        }
+
+        .small_svg_25px{
+            
+            height: 25px;
+            width: 25px;
+    
+        }
+
+        .small_svg_80px{
+    
+            height: 80px;
+            width: 80px;
+    
+        }
+
+        .small_svg_100px{
+    
+            height:100px;
+            width: 100px;
+    
+        }
+        
+
+        #stopButton{
+    
+            background-image: url('images/StopButtonNaruto_unclicked-svg.svg');
+            background-size: cover;
+            width: 150px; 
+            height: 59px;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+    
+        }
+
+        #stopButton.clicked{
+    
+            background-image: url('/images/StopButtonNaruto_clicked-svg.svg');
+            background-size: cover;
+            width: 150px;
+            height: 59px;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .stopbuttoncontainer{
+    
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 1vh;
+            width: auto;
+            height: auto;
+            
+        }
+
+        .emojicontainer{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 34.5vh;
+            padding: 1vh;
+            border: none;
+            box-shadow: none;
+    
+        }
+
+        #EmojiSound{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            box-shadow: none;
+    
+        }
+
+         #SiteButtonStateModeContainer{
+            
+            display: inline-block;
+            padding: 1.5vh;
+            vertical-align: middle;
+            position: absolute;
+            right: 50px;
+            margin-top: 25px
+        }
+
+        #SiteButtonStateMode{
+    
+            cursor: pointer;
+    
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: absolute;
+            margin-top: 20px;
+            right: 65px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            color: white;
+            
+        }
+        .dropdown:hover{
+    
+            color: gainsboro;
+    
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 90%;
+            overflow: auto;
+            box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+            background-color: rgba(250, 248, 248, 0.5);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            color: #FFFFFF;
+            background-color: gainsboro;
+        }
+
+        .hamburger{
+            display: none;
+            cursor: pointer;
+            font-size: 30px;
+            margin-top: 35px;
+            margin-right: 10px;
+        }
+
+        .hamburger img {
+            
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .hamburger-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 1px 10px 10px 1px rgba(0,0,0,0.4);
+            top: 100px;
+            background-color: rgba(250, 248, 248, 0.5);
+        }
+
+        .hamburger-content a {
+            display: block;
+            color:white;
+            padding: 5px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        .hamburger-content a:hover {
+            color: #FFFFFF;
+            background-color: gainsboro;
+        }
+
+        @media (max-width: 570px) {
+            .dropdown {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                position: absolute;
+            }
+        }
+
+        .rotation{
+    
+            transform: rotate(90deg);
+    
+        }
