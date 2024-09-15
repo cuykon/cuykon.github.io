@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <title>Cuykon - Clicking Button Game</title>
+    <meta name="description" content="Click a Button and Enjoy The Sounds">
+    <meta name="keywords" content="button, buttongame, button game, cuykon, cuykon button, button cuykon, fun game, fungame, soundbutton, sound button">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="Chill.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src=ButtonFunctionChill.js></script>
+    <script src="Ham.js"></script>
+</head>
+<body>
+    <div class="sticky">
+        <nav class="navigation">
+            <div class="hamburger"><img src="images/hamburger.svg" alt="Hamburger"></div>
+                <div class="hamburger-content">
+                    <a href="chill.html">Chill Button</a>
+                    <a href="ElNano.html">F1 Button</a>
+                    <a href="CuykonAnime.html">Anime Button</a>
+                    <a href="index.html">Cuykon</a>
+            </div>
+            <div id="logocontainer">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/LogoDarkMode.svg" class="small_svg_80px" id="logo" alt="Cuykon Logo"/></a>
+            </div> 
+            <div id="text_logo">
+            <h1>Cuykon</h1>
+            </div>
+            <div class="dropdown">
+                <h3>More Fun?</h3>
+                    <div class="dropdown-content">
+                        <a href="chill.html">Chill Button</a>
+                        <a href="ElNano.html">F1 Button</a>
+                        <a href="Naruto.html">Anime Button</a>
+                        <a href="index.html">Cuykon</a>
+                    </div>
+            </div>
+            <div id="issuebuttoncontainer"> 
+                <div class="tooltip">
+                    <a href="https://github.com/cuykon/cuykon.github.io/issues"><img src=images/IssueButtonDarkMode.svg alt="Issue" class="small_svg_25px" id="issuebutton"/></a>
+                        <span class="tooltiptext">Report a Bug</span>
+                </div>
+            </div> 
+        </nav>    
+    </div>
+    
+    <div>
+        <div class="counter"><p id="counter">Counter: 0</p></div>
+        <div class="Mainbutton-container"><button id="MainButton"></button></div>
+        <div class="emojicontainer"><img class="small_svg_100px" id="EmojiSound" src="emoji/Nothing.png"></div>
+    </div>
+    <div class="stopbuttoncontainer"><button id="stopButton"></button></div>
+        <footer>
+            <div class="nav_bottom">
+                <div class="social">
+                    <a href=https://github.com/cuykon><img src="images/github-markDarkMode.svg" alt="GitHub" class="small_svg_50px" id="github"/></a>
+                </div>
+                <div id="copyright">
+                <p>Copyright © 2024 <a href="https://github.com/Tuberoh">Tuberoh</a>. All Right Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    });
+  </script>
+</body>
+</html>
