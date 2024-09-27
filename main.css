@@ -458,14 +458,14 @@
 
         html[data-bs-theme="dark"] #stopButton{
     
-            background-image: url(imagessvg/StopButton_unclickedDarkMode.svg);
+            background-image: url(images/StopButton_unclickedDarkMode.svg);
     
     
         }
         
         html[data-bs-theme="dark"] #stopButton.clicked{
     
-            background-image: url(imagessvg/StopButton_clickedDarkMode.svg);
+            background-image: url(images/StopButton_clickedDarkMode.svg);
     
         }
         
