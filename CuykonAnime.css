@@ -15,7 +15,7 @@
         }
 
         #MainButton {
-            background-image: url('images/buttonNaruto_unclicked-svg.svg');
+            background-image: url('images/buttonNaruto_unclicked.svg');
             height: 250px;
             width: 350px;
             border: none;
@@ -35,7 +35,7 @@
         }
 
         #MainButton.clicked {
-            background-image: url('images/buttonNaruto_clicked-svg.svg');
+            background-image: url('images/buttonNaruto_clicked.svg');
         }
 
         @media (max-width: 480px){
