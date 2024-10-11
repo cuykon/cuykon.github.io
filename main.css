@@ -117,7 +117,7 @@
         #issuebuttoncontainer{
             
             display: inline-block;
-            padding: 1vh;
+            padding: 15px;
             vertical-align: middle;
             position: absolute;
             right: 0;
@@ -128,7 +128,7 @@
         }
         #issuebutton{
     
-            padding: 0.5vh;
+            cursor: pointer;
     
         }
 
@@ -300,7 +300,7 @@
          #SiteButtonStateModeContainer{
             
             display: inline-block;
-            padding: 1.5vh;
+            padding: 15px;
             vertical-align: middle;
             position: absolute;
             right: 50px;
