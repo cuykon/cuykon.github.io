@@ -1,0 +1,24 @@
+h1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    margin-top: 40vh;
+    
+    
+}
+.logocont{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logoimg{
+    
+    height: 200px;
+    width: auto;
+    
+}
